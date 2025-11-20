@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: priponka-podpore
+  labels:
+    app: priponka-podpore
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: priponka-podpore
+  template:
+    metadata:
+      labels:
+        app: priponka-podpore
+    spec:
+      containers:
+        - name: priponka-podpore
+          image: priponka-podpore
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 25Mi
+              cpu: 25m
+            limits:
+              memory: 25Mi
+              cpu: 25m
