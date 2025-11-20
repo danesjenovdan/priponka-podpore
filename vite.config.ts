@@ -8,10 +8,14 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
+      root: path.resolve(__dirname, 'src'),
+      build: {
+        outDir: path.resolve(__dirname, 'dist'),
+      },
       plugins: [react()],
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, '.'),
+          '@': path.resolve(__dirname, 'src'),
         }
       }
     };
