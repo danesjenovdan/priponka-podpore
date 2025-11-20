@@ -2,7 +2,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - "k8s"
+      - "referendum-dostojna-smrt-2025-k8s"
 jobs:
   push_to_registry:
     name: Build and push Docker image to registry
@@ -30,8 +30,8 @@ jobs:
           context: .
           push: true
           tags: |
-            rg.fr-par.scw.cloud/djnd/priponka-podpore:${{ github.sha }}
-            rg.fr-par.scw.cloud/djnd/priponka-podpore:latest
+            rg.fr-par.scw.cloud/djnd/priponka-podpore-referendum-dostojna-smrt-2025:${{ github.sha }}
+            rg.fr-par.scw.cloud/djnd/priponka-podpore-referendum-dostojna-smrt-2025:latest
 
       - name: Update image versions in kustomize/kustomization.yaml
         run: |

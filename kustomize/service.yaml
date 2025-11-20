@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: priponka-podpore
+  name: priponka-podpore-referendum-dostojna-smrt-2025
 spec:
   selector:
-    app: priponka-podpore
+    app: priponka-podpore-referendum-dostojna-smrt-2025
   ports:
     - protocol: TCP
       port: 80

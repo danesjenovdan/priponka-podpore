@@ -2,7 +2,7 @@ name: Automatic PRs
 on:
   push:
     branches:
-      - "main"
+      - "referendum-dostojna-smrt-2025"
 jobs:
   pull_requests:
     name: Automatic PRs
@@ -11,9 +11,9 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v5
 
-      - name: Pull request to k8s
+      - name: Pull request to referendum-dostojna-smrt-2025-k8s
         uses: repo-sync/pull-request@v2
         with:
-          destination_branch: "k8s"
+          destination_branch: "referendum-dostojna-smrt-2025-k8s"
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          pr_title: "Pulling ${{ github.ref }} into k8s"
+          pr_title: "Pulling ${{ github.ref }} into referendum-dostojna-smrt-2025-k8s"

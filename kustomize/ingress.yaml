@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: priponka-podpore
+  name: priponka-podpore-referendum-dostojna-smrt-2025
   annotations:
     #cert-manager.io/cluster-issuer: "letsencrypt-production"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
@@ -23,7 +23,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: priponka-podpore
+                name: priponka-podpore-referendum-dostojna-smrt-2025
                 port:
                   number: 80
     - host: vodici.danesjenovdan.si

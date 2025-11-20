@@ -6,6 +6,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: priponka-podpore
-    newName: rg.fr-par.scw.cloud/djnd/priponka-podpore
+  - name: priponka-podpore-referendum-dostojna-smrt-2025
+    newName: rg.fr-par.scw.cloud/djnd/priponka-podpore-referendum-dostojna-smrt-2025
     newTag: "latest"

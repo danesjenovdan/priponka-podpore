@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: priponka-podpore
+  name: priponka-podpore-referendum-dostojna-smrt-2025
   labels:
-    app: priponka-podpore
+    app: priponka-podpore-referendum-dostojna-smrt-2025
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: priponka-podpore
+      app: priponka-podpore-referendum-dostojna-smrt-2025
   template:
     metadata:
       labels:
-        app: priponka-podpore
+        app: priponka-podpore-referendum-dostojna-smrt-2025
     spec:
       containers:
-        - name: priponka-podpore
-          image: priponka-podpore
+        - name: priponka-podpore-referendum-dostojna-smrt-2025
+          image: priponka-podpore-referendum-dostojna-smrt-2025
           ports:
             - containerPort: 80
           resources:
