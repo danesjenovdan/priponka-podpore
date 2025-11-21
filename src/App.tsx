@@ -61,7 +61,7 @@ const App: React.FC = () => {
           </div>
           
           <div className="text-right hidden sm:block">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Referendum</p>
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Referendum o dostojni smrti</p>
             <p className="text-lg font-bold text-rose-600">23. november</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const App: React.FC = () => {
             Pokaži svojo podporo!
           </h2>
           <p className="text-lg text-gray-600">
-            Ustvari sliko profila s sloganom kampanje in pomagaj širiti glas za <span className="font-bold text-rose-600">svobodno odločanje o življenju</span>.
+            Svoji profilni sliki za družbena omrežja dodaj slogan kampanje in pomagaj širiti glas za <span className="font-bold text-rose-600">svobodno odločanje o dostojni smrti</span>.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ const App: React.FC = () => {
                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Izberi napis za priponko</label>
                 <div className="grid grid-cols-1 gap-2">
                   {[
-                    { id: StickerVariant.VOTE, label: 'Glasoval/a sem ZA' },
+                    { id: StickerVariant.VOTE, label: 'Glasoval_a sem ZA' },
                     { id: StickerVariant.DIGNIFIED, label: 'Želim dostojno smrt' },
                     { id: StickerVariant.RIGHTS, label: 'Moje življenje, moja pravica' }
                   ].map((opt) => (
@@ -191,7 +191,7 @@ const App: React.FC = () => {
             {/* Date and Vote Badge */}
             <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-3 pl-6 pr-3 inline-flex flex-col sm:flex-row items-center gap-4">
                 <span className="text-white font-extrabold text-xl sm:text-2xl tracking-wide drop-shadow-sm">
-                    V NEDELJO 23. 11.
+                    V NEDELJO, 23. 11.
                 </span>
                 <div className="bg-[#ce2e3e] text-white px-6 py-2 rounded-xl font-black text-xl shadow-md transform -rotate-1 hover:rotate-0 transition-transform cursor-default">
                     GLASUJ ZA
@@ -199,9 +199,9 @@ const App: React.FC = () => {
             </div>
 
             {/* Slogan */}
-            <p className="text-white font-bold text-lg sm:text-2xl tracking-wide uppercase drop-shadow-md">
+            {/* <p className="text-white font-bold text-lg sm:text-2xl tracking-wide uppercase drop-shadow-md">
                 POMOČ PRI PROSTOVOLJNEM KONČANJU ŽIVLJENJA.
-            </p>
+            </p> */}
          </div>
       </footer>
 
