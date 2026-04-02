@@ -8,4 +8,4 @@ resources:
 images:
   - name: priponka-podpore-referendum-dostojna-smrt-2025
     newName: rg.fr-par.scw.cloud/djnd/priponka-podpore-referendum-dostojna-smrt-2025
-    newTag: '2000605de9a002ac30a3615367a56c185077d8b6'
+    newTag: '7d602be33fda50201ebd32f74a949ba2c5c4d8e6'
