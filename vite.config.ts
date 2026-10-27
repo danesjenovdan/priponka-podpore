@@ -10,14 +10,14 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       base: './',
-      root: path.resolve(__dirname, 'src'),
+      root: path.resolve(import.meta.dirname, 'src'),
       build: {
-        outDir: path.resolve(__dirname, 'dist'),
+        outDir: path.resolve(import.meta.dirname, 'dist'),
       },
       plugins: [react(), tailwindcss()],
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, 'src'),
+          '@': path.resolve(import.meta.dirname, 'src'),
         }
       }
     };
